@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <link href="/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="/Content/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <a href="#" class="logo"><b>live </b>course</a>
+                <nav>
+                    <ul>
+                        <li id="as"><a href="/mvcUsers/home">Home</a></li>
+                        <li><a href="/mvccourses/Index">courses</a></li>
+                        <li><a href="/mvcwork_group/Index">work groups</a></li>
+                        <li><a href="/mvcUsers/profile">profile</a></li>
+                        <li><a href="~/mvcusers/ourTeam">our Team</a></li>
+                        <li><a href="#">contact</a></li>
+
+
+                    </ul>
+
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+    <hr />
+    <footer style="background-color:bisque;text-align:center;padding:3em;">
+        <p>&copy; @DateTime.Now.Year - our DataBase project</p>
+
+    </footer>
+    <script src="/mypages/Loginh/js/jquery-3.3.1.min.js"></script>
+    <script src="/mypages/Loginh/js/bootstrap.min.js"></script>
+</body>
+</html>
